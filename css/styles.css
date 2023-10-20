@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html, body {
+    height:100%;
+}
+
+html{
+background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 251, 121) 90%);
+}
+
+.lato{
+	font-family: 'Lato', sans-serif;
+}
+
+.dflex{
+	display: flex;
+}
+
+.ai-c{
+	align-items: center;
+}
+.list{
+	justify-content: center;
+    display: grid;
+    
+}
+
+.list__header{
+	margin-bottom: 10px;
+	font-size: 18pt; 
+}
+
+.list__cont{
+	display: grid;
+    gap: 16px;
+
+}
+
+.card__estation{
+	display: grid;
+    gap: 15px;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(255 243 158);
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+a{
+    text-decoration: none !important;
+
+    color: black;
+}
+.card__estation:hover{
+    background-color: rgb(243 230 134);
+    transition: 0.5s;
+    transform: scale(1.1);
+
+}
+
+
+.card__estation__header{
+	font-size: 12pt;
+    font-weight: 600;
+}
+
+.card__estation__info{
+	display: flex;
+    justify-content: space-between;
+}
