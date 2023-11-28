@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
-html, body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3 ;
+}
+
+html{
     height:100%;
 }
 
@@ -16,9 +23,16 @@ background: radial-gradient(circle at 10% 20%, rgb(255, 200, 124) 0%, rgb(252, 2
 	display: flex;
 }
 
+.dnone{
+    display: none;
+}
 .ai-c{
 	align-items: center;
 }
+.cp{
+    cursor: pointer;
+}
+
 .list{
 	justify-content: center;
     display: grid;
@@ -67,4 +81,164 @@ a{
 .card__estation__info{
 	display: flex;
     justify-content: space-between;
+}
+
+
+#wrapper{
+    display: flex;
+}
+.panel{
+    background-color: rgb(255 243 158 / 70%);
+    width: 70%;
+    height: 97vh;
+    position: relative;
+    margin: 10px;
+    padding-inline: 40px;
+    border-radius: 10px;
+
+}
+
+.panel__leave{
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(205 196 133 / 30%);
+    border-radius: 10px 0 10px 0;
+    box-shadow: 2px 2px 4px 0px #000000a6;
+    transition: 0.5s
+}
+
+.panel__leave:hover{
+    background-color: rgb(139 132 88 / 30%);
+    transition: 0.5s;
+}
+
+.panel__cont{
+    height: 30%;
+}
+
+.panel__date{
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+
+}
+
+.panel__place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel__temp{
+/*    display: flex;*/
+}
+
+.panel__temp__div{
+    width: 50%;
+}
+
+.panel__hume__div{
+    width: 100%; 
+
+}
+
+.panel__vie__div{
+    width: 100%;
+}
+.panel__fwi__div{
+    width: 100%;
+}
+
+.panel__pre__div{
+    width: 100%;
+}
+
+.panel__temp__header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel__temp__cont__big{
+    font-size: 40pt;
+    display: flex;
+    justify-content: center;
+}
+
+.panel__temp__cont__axel{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.panel__temp__cont__axel__cont__header{
+    display: flex;
+    align-items: center;
+}
+.panel__temp__cont__axel__cont__value{
+    display: flex;
+    justify-content: center;
+}
+
+
+.panel__hume__cont__axel{
+    width: 40%;
+}
+
+.panel__hume__cont__axel__cont__header{
+    display: flex;
+    justify-content: center;
+}
+
+.conenedor__canvas{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+.graficos{
+    height: 50%;
+    position: relative;
+    width: 90%;
+
+}
+
+.graficos__contenedor{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container{
+    grid-template-columns: 44% 44%;
+    grid-template-rows: 22% 22% 22%;
+    margin: 10px;
+    display: grid;
+    gap: 27px;
+}
+
+.btn-div{
+    padding: 30px;
+    background-color: rgb(205 196 133 / 30%);
+    border-radius: 10px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-div:hover{
+    transform: scale(1.1);
+    background-color: rgb(139 132 88 / 30%);
+    transition: 0.5s;
+
+}
+
+.btn-div-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

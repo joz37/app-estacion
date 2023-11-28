@@ -23,10 +23,11 @@ function createbtn(info){
 	const tpl = tpl_btn.content
 	const clon = tpl.cloneNode(true)
 
-	clon.querySelector(".card__estation").setAttribute("href", "./panel.php?chipid="+info.chipid)
+	clon.querySelector(".card__estation").setAttribute("href", "./detalle.php?chipid="+info.chipid)
 	clon.querySelector(".card__estation__header").innerHTML = info.apodo
 	clon.querySelector(".card__estation__ubication").innerHTML = info.ubicacion
 	clon.querySelector(".card__estation__views").innerHTML = info.visitas
 	listcont.appendChild(clon)
 
 }
+
